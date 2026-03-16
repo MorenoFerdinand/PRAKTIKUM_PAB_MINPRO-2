@@ -1,1 +1,61 @@
-# PRAKTIKUM_PAB_MINPRO-2
+| NAMA | NIM | KELAS |
+| :--- | :--- | :--- |
+| MORENO FERDINAND FARHANTINO | 2409116097 | C`24 |
+
+# Aplikasi Manajemen Pengajuan Beasiswa (Supabase Integrated)
+
+Aplikasi **Manajemen Pengajuan Beasiswa** versi 2.0 ini merupakan pengembangan dari proyek sebelumnya. Kini, aplikasi telah terintegrasi sepenuhnya dengan **Supabase** sebagai backend untuk penyimpanan data secara *real-time* dan sistem autentikasi pengguna.
+
+---
+
+## Deskripsi Aplikasi
+Aplikasi ini berfungsi sebagai platform administrasi untuk mengelola data beasiswa secara digital. Pada pembaruan Mini Project 2 ini, fokus utama adalah pada **sinkronisasi cloud**, keamanan data menggunakan **Supabase Auth**, dan fleksibilitas tampilan dengan fitur **Dark Mode**. Seluruh data dikelola secara dinamis melalui database server Supabase.
+
+---
+
+## Fitur Utama (CRUD & Auth)
+Sesuai dengan ketentuan Mini Project 2, aplikasi ini memiliki fungsi manajemen data lengkap:
+
+* **Authentication (Login & Register)**: Fitur keamanan untuk masuk ke aplikasi menggunakan email dan password yang terverifikasi di Supabase Auth.
+* **Create (Tambah Data)**: Menambahkan entri beasiswa baru langsung ke tabel database Supabase melalui formulir input.
+* **Read (Tampilkan Data)**: Menampilkan daftar beasiswa secara *real-time* dari server cloud menggunakan widget `StreamBuilder`.
+* **Update (Ubah Data)**: Memperbarui informasi beasiswa yang sudah ada dengan sinkronisasi otomatis ke server.
+* **Delete (Hapus Data)**: Menghapus data secara permanen dari database Supabase.
+
+---
+
+## Widget yang Digunakan
+Aplikasi ini dibangun menggunakan widget fundamental Flutter untuk memastikan performa dan sinkronisasi data yang optimal:
+
+| Jenis Widget | Fungsi |
+| :--- | :--- |
+| **StreamBuilder** | Menangani sinkronisasi data secara *real-time* dari database Supabase. |
+| **Scaffold** | Struktur dasar halaman aplikasi (AppBar, Body, FloatingActionButton). |
+| **TextField** | Digunakan untuk input Email, Password, dan 3 Field Beasiswa (Nama, Penyelenggara, Syarat). |
+| **ListView.builder** | Merender daftar beasiswa dari cloud secara efisien dan dinamis. |
+| **Card & ListTile** | Membungkus informasi beasiswa agar terstruktur dan rapi. |
+| **ElevatedButton** | Tombol utama untuk memproses autentikasi dan penyimpanan data. |
+| **Navigator** | Menangani perpindahan halaman (Multi-page Navigation) antara Auth dan Home. |
+
+#### Nilai Tambah (Advanced Features)
+
+| Fitur | Fungsi |
+| :--- | :--- |
+| **Supabase Auth** | Menangani sistem pendaftaran dan login pengguna secara aman di sisi server. |
+| **Light & Dark Mode** | Fitur untuk mengubah tema aplikasi agar lebih nyaman dipandang. |
+| **Dotenv (.env)** | Mengamankan Supabase URL dan Anon Key agar tidak terekspos langsung di kode sumber. |
+
+---
+
+## Struktur Project
+```text
+lib/
+├── pages/
+│   ├── home_screen.dart       # Menampilkan List Data dari Supabase
+│   ├── login_screen.dart      # Halaman Masuk (Auth)
+│   ├── register_screen.dart   # Halaman Daftar (Auth)
+│   └── form_screen.dart       # Form Tambah & Edit Data
+├── widgets/
+│   └── scholarship_card.dart  # Komponen kartu tampilan data
+├── .env                       # File konfigurasi API Key (Hidden)
+└── main.dart                  # Inisialisasi Supabase & Root App
