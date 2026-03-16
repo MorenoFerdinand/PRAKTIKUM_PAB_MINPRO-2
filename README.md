@@ -4,7 +4,7 @@
 
 # Aplikasi Manajemen Pengajuan Beasiswa (Supabase Integrated)
 
-Aplikasi **Manajemen Pengajuan Beasiswa** versi 2.0 ini merupakan pengembangan dari proyek sebelumnya. Kini, aplikasi telah terintegrasi sepenuhnya dengan **Supabase** sebagai backend untuk penyimpanan data secara *real-time* dan sistem autentikasi pengguna.
+Aplikasi **Manajemen Pengajuan Beasiswa**  ini merupakan pengembangan dari proyek sebelumnya. Kini, aplikasi telah terintegrasi sepenuhnya dengan **Supabase** sebagai backend untuk penyimpanan data secara *real-time* dan sistem autentikasi pengguna.
 
 ---
 
