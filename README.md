@@ -59,3 +59,21 @@ lib/
 │   └── scholarship_card.dart  # Komponen kartu tampilan data
 ├── .env                       # File konfigurasi API Key (Hidden)
 └── main.dart                  # Inisialisasi Supabase & Root App
+```
+
+## Lampiran
+
+1. Usser
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/92dca33f-906b-46c6-b4c0-0a844bd542c5" />
+
+---
+2. Pendataan
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3b77818e-7603-410d-84f5-69e8cd2c2fdc" />
+
+---
+3. Tampilan Awal
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5ee7c66e-4738-459e-aa22-2cfc240ddc13" />
+
+---
+4. Edit
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/a5a6afc9-fd64-4669-b6e5-41e05ce8634d" />
